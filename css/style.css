@@ -1,0 +1,185 @@
+body{
+    font-family: 'Roboto', sans-serif;  
+    background-color: #1E202B;
+}
+.bg-darkblue
+{
+    background-color: #1E202B;
+}
+.color-lightblue
+{
+    color: #009ad8;
+}
+.bg-lightblue
+{
+   background-color: #009ad8;
+}
+.bg-blue
+{
+    background-color: #323544;
+}
+.bg-blue2
+{
+    background-color: #2D303D;
+}
+/* Navbar */
+small
+{
+    color: rgb(191, 193, 200);
+    font-size: 10px;
+}
+h3
+{
+    font-size: 16px;
+}
+#demo
+{
+    padding: 5px 18px;
+    border: solid #009ad8 2px;
+}
+#demo a
+{
+    color: #009ad8 !important;
+}
+.nav-item{
+    font-size: 14px;
+    padding: 5px 15px;
+    line-height: 0;
+    margin-right: 10px;
+    border: solid transparent 2px;
+    transition: all 0.5s;
+}
+.nav-item:hover
+{
+    
+    border: solid #009ad8 2px;
+    border-radius: 50rem;
+}
+.nav-item a{
+    transition: all 0.5s;
+}
+.nav-item:hover a
+{
+    color: #009ad8 !important;
+}
+/* End of Navbar */
+
+/* Search */
+#search
+{
+    border: none;
+}
+#search:focus
+{
+    background-color: #1E202B;
+}
+.find-loc
+{
+    position: relative;
+}
+.find-loc .btn
+{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.search .find-loc
+{
+    width: 83%;
+}
+
+/* Weather */
+#nextMaxTemp , #nextNextMaxTemp
+{
+    color: white;
+}
+#nextStateImg , #nextNextStateImg{
+    width: 48px;
+    height: 48px;
+}
+#currentIconTemp
+{
+    width: 90px;
+    height: 90px;
+}
+.table
+{
+    color:rgb(191, 193, 200) !important;
+    margin-bottom: 0px !important;
+}
+
+.state
+{
+    color:
+rgb(0, 154, 216);
+}
+.card 
+{
+    height: 360px;
+}
+.table img
+{
+    width: 21px;
+    height: 21px;
+}
+.card-body span
+{
+    font-size: 78px;
+    display: inline-block;
+    margin-right: 50px;
+}
+.table .card
+{
+    border: none !important;
+}
+.table .second .card-header
+{
+    background-color: #222530;
+}
+.table .second .card-body
+{
+    background-color: #262936;
+}
+/* Footer */
+input
+{
+    color: white !important;
+}
+footer
+{
+    background-color: #262936;
+
+}
+.icons i
+{
+    color: #009AD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1E202B;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 10px 10px 0px 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.icons i:hover
+{
+    background-color: #009AD8;
+    color: white;
+}
+footer p
+{
+    font-size: 14px;
+    color:rgb(191, 193, 200);
+}
+.body
+{
+    background-image:linear-gradient(to bottom, transparent 60%,  #1E202B 40%), url('../img/banner.png');
+    
+    background-repeat: no-repeat;
+    
+    
+    width:100%;
+    display:table;
+    
+}

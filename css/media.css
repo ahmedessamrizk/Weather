@@ -1,0 +1,71 @@
+
+@media only screen and (max-width: 580px) {
+}
+@media only screen and (max-width: 760px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 900px) {
+    footer .icons
+    {
+        margin-top: 0px !important;
+    }
+    footer .find-loc
+    {
+        width: 97% !important;
+    }
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .body
+    {
+        /* background-image:linear-gradient(to bottom, transparent 30%,  #1E202B ), url('../img/banner.png'); */
+    }
+    /* .table .last
+    {
+        margin-bottom: 0px!important;
+        padding-bottom: 0px !important;
+    }
+    .table .card
+    {
+        margin-bottom: 0px !important;
+    }
+    .table .second .card-body
+    {
+        padding-bottom: 0px !important;
+    }
+    .table .state p{
+        margin-bottom: 0px!important;
+    } */
+    
+  nav .collapse
+  {
+    margin: 40px auto 0px;
+    background-color: #262936;
+    border-radius: 15px;
+    
+  }
+.nav-item{
+    border: solid transparent 2px;
+    transition: all 0.5s;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px grey solid;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+#demo
+{
+    padding: 20px 0px;
+    border: none;
+}
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

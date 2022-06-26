@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Weather API</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-darkblue py-5">
+      <div class="container">
+        <div class="logo d-flex ms-5">
+            <div class="img">
+              <img src="img/logo@2x.png" width="64" height="38" alt="">
+            </div>
+            <div class="title mx-2">
+              <h3 class="text-white p-0 fw-bold m-0">Weather</h3>
+              <small class="p-0">tagline goes here</small>
+            </div>
+        </div>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars text-white"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item rounded-pill" id="demo">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#contact" >Contact</a>
+            </li>
+           
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="body">
+      <section class="search my-5">
+        <div class="find-loc mx-auto">
+          <input type="text" placeholder="Find your location..." class="form-control rounded-pill py-3 mb-4 mt-3 bg-darkblue ps-3" id="search">
+          <input type="button" class="btn bg-lightblue rounded-pill py-2 px-4 fs-6 text-white" value="Find">
+        </div>
+      </section>
+      <section class="table">
+        <div class="container">
+          <div class="row gx-0 gy-0 container-rounded mb-3">
+              <div class="col-lg-4 px-0 first ">
+                <div class="card mb-3">
+                  <div class="card-header d-flex justify-content-between bg-blue2 ">
+                    <p class="mb-0 pb-0" id="currentDay"></p>
+                    <p class="mb-0 pb-0" id="currentDate"></p>
+                  </div>
+                  <div class="card-body ps-3 bg-blue">
+                    <h4 class="mt-3 pb-2" id="country">Cairo</h4>
+                    <div class="row d-flex align-baseline mb-4">
+                      <div class="col-8">
+                        <span class="text-white" id="currentTemp"></span>
+                      </div>
+                      <div class="col-4">
+                        <img src="" alt="" id="currentIconTemp"  >
+                      </div>
+                    </div>
+
+                    <p class="state" id="currentState"></p>
+                    <div class="wind d-flex">
+                      <div class="part d-flex">
+                        <img src="img/icon-umberella.png"alt="">
+                        <p class="ms-2 me-4 ">20%</p>
+                      </div>
+                      <div class="part d-flex">
+                        <img src="img/icon-wind.png"alt="">
+                        <p class="ms-2 me-4 ">18km/h</p>
+                      </div>
+                      <div class="part d-flex">
+                        <img src="img/icon-compass.png"alt="">
+                        <p class="ms-2 me-4 ">East</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="col-lg-4 px-0 second">
+                <div class="card  mb-3 second text-center">
+                  <div class="card-header" id="nextDay"></div>
+                  <div class="card-body pt-5 pb-5">
+                    <img src="img/icon-compass.png" alt="" id="nextStateImg">
+                    <p class="mt-4 fs-4" id="nextMaxTemp">41C</p>
+                    <p class="fs-6 mb-4" id="nextMinTemp">24.7C</p>
+                    <p class="state" id="nextState">Sunny</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-0 last ">
+                <div class="card  mb-3 text-center">
+                  <div class="card-header bg-blue2" id="nextNextDay"></div>
+                  <div class="card-body bg-blue pt-5 pb-5">
+                    <img src="img/icon-compass.png" alt="" id="nextNextStateImg">
+                    <p class="mt-4 fs-4" id="nextNextMaxTemp">41C</p>
+                    <p class="fs-6 mb-4" id="nextNextMinTemp">24.7C</p>
+                    <p class="state" id="nextNextState">Sunny</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>  
+    </div>
+    <footer class="footer py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+        <div class="find-loc w-75 mx-auto">
+          <input type="text" placeholder="Enter your email to subscribe..." class="form-control rounded-pill py-3 mb-4 mt-3 bg-darkblue ps-3" id="search">
+          <input type="button" class="btn bg-lightblue rounded-pill py-2 px-4 fs-6 text-white" value="Subscribe">
+          <p class="ms-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="icons d-flex mt-2">
+          <i class="fa-brands fa-facebook-f  rounded-circle text-center d-flex justify-content-center align-items-center"></i>
+          <i class="fa-brands fa-twitter  rounded-circle text-center d-flex justify-content-center align-items-center"></i>
+          <i class="fa-brands fa-google-plus-g  rounded-circle text-center d-flex justify-content-center align-items-center"></i>
+          <i class="fa-brands fa-pinterest-p  rounded-circle text-center d-flex justify-content-center align-items-center"></i>
+        </div>
+      </div>
+      </div>
+      </div>
+        
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
