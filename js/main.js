@@ -1,6 +1,6 @@
 let search = document.getElementById("search");
 let data;
-let months = ["Jan" , "Feb" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"];
+let months = [" Jan" , " Feb" , " March" , " April" , " May" , "June" , " July" , " August" , " September" , " October" , " November" , " December"];
 let days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
 let country = document.getElementById("country");
 
@@ -26,13 +26,13 @@ var cDate = new Date();
 currentDay.innerHTML = days[cDate.getDay()];
 if(cDate.getDay() == 6)
 {
-    nextDay.innerHTML = days[cDate.getDay() - 6];
-    nextNextDay.innerHTML = days[cDate.getDay() - 6 + 1];
+    nextDay.innerHTML = days[0];
+    nextNextDay.innerHTML = days[1];
 }
 else if(cDate.getDay() == 5)
 {
-    nextDay.innerHTML = days[cDate.getDay() + 1];
-    nextNextDay.innerHTML = days[cDate.getDay() - 6];
+    nextDay.innerHTML = days[6];
+    nextNextDay.innerHTML = days[0];
 }
 else
 {
